@@ -1,0 +1,19 @@
+.App {
+  max-width: 800px;
+  border: 1px solid black;
+  margin: 20px auto;
+}
+header {
+  text-align: center;
+  line-height: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  width: 60px;
+}
+h1 {
+  display: inline-block;
+  font-size: 50px;
+}
