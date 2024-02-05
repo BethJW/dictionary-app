@@ -1,15 +1,24 @@
 import React from "react";
-
+import Meaning from "./Meanings";
 export default function DefinitionBody(props) {
-  return (
-    <div className="definitionBody">
-      <h2 className="word">
-        {props.data.word}{" "}
-        <span className="phonetic">{props.data.phonetic}</span>
-      </h2>
-      <div className="meaning">
-        <h3>{props.data.definitionObject}</h3>
+  if (props.data) {
+    return (
+      <div className="definitionBody">
+        <h2 className="word">
+          {props.data.word}{" "}
+          <span className="phonetic">{props.data.phonetic}</span>
+        </h2>
+
+        {props.data.data.meanings.map(function (meaning, index) {
+          return (
+            <div key={index}>
+              <Meaning meaning={meaning} />
+            </div>
+          );
+        })}
       </div>
-    </div>
-  );
+    );
+  } else {
+    return null;
+  }
 }
