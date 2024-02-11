@@ -18,6 +18,11 @@ function App() {
         <p>Want to find a definition? Use our Dictionary tool to help!</p>
         <Search />
       </div>
+      <p>
+        coded by <a href="https://github.com/BethJW">Beth Williamson</a> and
+        open-source on{" "}
+        <a href="https://github.com/BethJW/dictionary-app">Github</a>
+      </p>
     </div>
   );
 }
