@@ -1,14 +1,18 @@
 ul {
   list-style: none;
-  display: flex;
-  padding: 0px;
-  margin: 20px 0px;
+  width: 800px;
+  display: block;
+  margin-left: -30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 li {
-  margin-right: 5px;
   border: 1px solid green;
   padding: 5px;
   border-radius: 10px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 li:hover {
   background-color: rgb(195, 240, 189);
